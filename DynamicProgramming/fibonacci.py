@@ -10,7 +10,7 @@ def fibonacci(n):
     return fibonacci(n-1) + fibonacci(n-2)
 
 
-def fibo(n, cache):
+def fibo(n, cache=dict()):
     '''Top-down dynamic programming with memoization (add cache);
     increases speed from n! to n as there are no repeated operations;
     memory limits make it impossible to compute when n is extremely large'''
