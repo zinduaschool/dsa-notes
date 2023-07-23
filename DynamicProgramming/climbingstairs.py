@@ -4,7 +4,7 @@ def climbingstairs(n,cache):
     if n == 1:
         return 1
     if n == 2:
-        return 3
+        return 2
     if n in cache.keys():
         return cache[n]
     cache[n] = climbingstairs(n-1, cache) + climbingstairs(n-2,cache)
@@ -15,7 +15,7 @@ def climbstairs(n):
     '''We'll implement bottom-up dynamic programming to solve the solution;
     this is the most optimal solution as they is no memory limit problem'''
     a = 1
-    b = 3
+    b = 2
     if n == 1:
         return a
     if n == 2:
