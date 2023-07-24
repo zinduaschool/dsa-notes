@@ -58,6 +58,7 @@ function fibBottomUp(n) {
 
 // or
 
+//Time Complexity: O(n) | Space Complexity: O(n)
 function fibBottopUp2(n) {
   let fib = [0, 1]                  // Initialize array to store first two fibonacci numbers
   for ( let i = 2; i <= n; i ++) {  // iterate array from index 2 to n
