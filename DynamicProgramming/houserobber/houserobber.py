@@ -1,4 +1,4 @@
-def houserobber(lst):
+def linerob(lst):
     if len(lst) == 0:
         return None
     a = lst[0]
@@ -13,4 +13,4 @@ def houserobber(lst):
         b = c
     return c
 
-print(houserobber([2,1,2,1,1,2]))
+print(linerob([2,1,2,1,1,2]))
