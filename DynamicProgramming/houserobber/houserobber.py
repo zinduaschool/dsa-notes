@@ -13,4 +13,6 @@ def linerob(lst):
         b = c
     return c
 
-print(linerob([2,1,2,1,1,2]))
+
+if __name__ == '__main__':
+    print(linerob([2,1,2,1,1,2]))
