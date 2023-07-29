@@ -29,6 +29,8 @@ To use Big O notation, we describe the running time of an algorithm in terms of 
 
 <hr>
 
+Reference: [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
+
 ## Prerequisites
 > To **Note**: Understanding time and space complexity is important because it helps us predict the perfomance of an algorithm and choose the most effecient solution for a given problem. These two are closely related <br>
 1. **Time Complexity** - This is a measure of how fast an algorithm runs
