@@ -16,3 +16,23 @@ function houseRobber (nums) {
     } 
     return rob2
 }
+
+
+/**Solution2 -> Memoization/Top Down Approach
+ * @Time Complexity : O(n)
+ * @Space Complexity: O(n)
+ * @param {[number]} nums 
+ * @returns {number} -> max amount of money that can be robbed
+ */
+function houseRobber(nums, memo=[]) {
+    if (nums.length < 2) {
+        return nums[0]
+    }
+    memo[0] = nums[0]
+    memo[1] = Math.max(nums[0], nums[1])
+
+    for (let i =2; i < nums.length; i++) {
+        memo[i] = Math.max(memo[i-1], memo[i-2] + nums[i])
+    }
+    return memo[nums.length - 1]
+}
