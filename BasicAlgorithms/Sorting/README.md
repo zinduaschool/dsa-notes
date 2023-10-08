@@ -1,4 +1,3 @@
-
 # Sorting Algorithms
 Read this blog from [Geeks for Geeks](https://www.geeksforgeeks.org/sorting-algorithms/)
 ## Selection Sort
