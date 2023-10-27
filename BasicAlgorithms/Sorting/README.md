@@ -4,7 +4,7 @@
 
   - <a href="./L1-bubble-sort/README.md">Bubble Sort</a>
   - Selection Sort
-  - Insertion Sort
+  - <a href="./L1-insertion-sort/README.md">Insertion Sort</a>
   - Merge Sort
   - Quick Sort
   - Heap Sort
