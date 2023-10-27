@@ -3,8 +3,6 @@ my_array2 = [5,2,3,1] #test case 2
 my_array3 = [45, 10, 63, 40, 50, 80] #test case 3
 
 '''
-Bubble sort is a simple sorting algorithm that repeatedly steps through the list, 
-compares adjacent elements and swaps them if they are in the wrong order.
 Time complexity: O(n^2)
 Space complexity: O(1)
 '''
@@ -17,7 +15,8 @@ def bubble_sort(arr):
     return arr          
 
 
-
+print(bubble_sort(my_array1))
+print(bubble_sort(my_array2))
 print(bubble_sort(my_array3))
 
             

@@ -23,4 +23,6 @@ const bubbleSort = (arr)=>{
 }
 
 
+console.log(bubbleSort(myArray1))
+console.log(bubbleSort(myArray2))
 console.log(bubbleSort(myArray3))
