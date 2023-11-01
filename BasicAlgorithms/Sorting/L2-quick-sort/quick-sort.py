@@ -2,7 +2,7 @@ my_array1 = [70, 30, 10, 50, 100, 2] #test case 1
 my_array2 = [5,2,3,1] #test case 2
 my_array3 = [45, 10, 63, 40, 50, 80] #test case 3
 
-
+#With the pivot as the last element of the array
 def partition(arr, low, high):
     pivot = arr[high]
     i = low -1

@@ -26,7 +26,7 @@ const partition = (arr, low, high)=>{
  * @SpaceComplexity - O(1)
  * @param {*} arr 
  * @param {*} low 
- * @param {*} high 
+ * @param {*} high - Pivot(last element of the array)
  * @returns sorted array
  */
 const quickSort = (arr, low, high)=>{
