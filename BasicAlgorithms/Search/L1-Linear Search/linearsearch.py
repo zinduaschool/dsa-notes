@@ -1,3 +1,7 @@
+'''
+Time Complexity - O(n)
+Space Complexity - O(1)
+'''
 def linearsearch(lst,a):
     for i in range(len(lst)):
         if lst[i] == a:
