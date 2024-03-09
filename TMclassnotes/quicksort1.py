@@ -20,9 +20,10 @@ def quicksort(arr):
         
         return quicksort(left_arr) + [pivot] + quicksort(right_arr)
 
-
+'''
+Still working on the memory efficient quick sort methods below:
 def partition(arr, left, right):
-    '''Takes in an array and its sub-indexes and returns the position for the next partition'''
+    #Takes in an array and its sub-indexes and returns the position for the next partition
     i = left
     j = right - 1
     pivot = arr[right]
@@ -45,8 +46,7 @@ def quick_sort(arr, left, right):
         quick_sort(arr, pivot_pos, right)
         quick_sort(arr, left, pivot_pos)
     return arr
-
-
+'''
 arr = [23,96,45,34,1,78,13,12]
-print(quick_sort(arr, 0, len(arr)-1))
-#print(quicksort(arr))
+#print(quick_sort(arr, 0, len(arr)-1))
+print(quicksort(arr))
