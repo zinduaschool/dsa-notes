@@ -13,7 +13,7 @@
   - Applications - Linear data structures find applications in various fields including computer science algorithms, data storage, and representation of linear sequences such as lists, queues, and stacks. 
 
 > Examples: Examples of linear data structures include
-- arrays
-- linked lists 
-- stacks 
-- queues.
+- <a href="./arrays/">Arrays</a>
+- <a href="./LinkedLists/">Linked Lists</a>
+- <a href="./Stacks/">Stacks</a> 
+- <a href="./Queues/">Queues</a>
