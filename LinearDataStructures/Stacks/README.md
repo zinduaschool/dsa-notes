@@ -10,16 +10,21 @@
 - Stacks are dynamic in nature; this means that they do not have a fixed size and their size can be increased or decreased depending upon the number of elements.
 - In stacks, only one end is available to perform actions like insertion or deletion of the elements
 - Stacks follow LIFO, which is Last In, First Out mechanism. Inserting an element is known as push, and deleting an element is known as pop.
+- Stacks are used in various applications like function calls, expression evaluation, etc.
 
 > Stacks Operations:
 
 - **Push**: Adds an element to the stack.
+  - Complexity: O(1)
 - **Pop**: Removes an element from the stack.
+  - Complexity: O(1)
 - **Peek**: Returns the top element of the stack.
+  - Complexity: O(1)
 - **isEmpty**: Checks if the stack is empty.
+  - Complexity: O(1)
 - **isFull**: Checks if the stack is full.
+  - Complexity: O(1)
 - **Size**: Returns the size of the stack.
-
 
 >Example Question:
 
