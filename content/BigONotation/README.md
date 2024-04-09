@@ -25,7 +25,7 @@ To use Big O notation, we describe the running time of an algorithm in terms of 
  8. **O(n!)** - Factorial: _This means that the running time of the algorithm is proportional to the factorial of the input size. This can be demonstrated by, an algorithm is the travelling salesperson problem_
 
 <br>
-<img width="850"  src="./../assets/bigo-cheat-sheet.png" alt="Big O"/>
+<img width="850"  src="../../assets/bigo-cheat-sheet.png" alt="Big O"/>
 
 <hr>
 
