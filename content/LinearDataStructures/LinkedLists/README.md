@@ -3,7 +3,7 @@ A **[linked List]()** is used to represent sequential data. It is a data structu
 
 <hr>
 
-<img src="../../assets/Linked-List-Data-Structure.png" alt="Linked List example image"/>
+<img src="../../../assets/Linked-List-Data-Structure.png" alt="Linked List example image"/>
 
 ## Types of Linked Lists
 1. **Singly Linked List** : <br>Each node in the list contains a reference or a pointer to the the next node in the list. <br>The last node in the list (tail) contains a reference to null, indicating the end of the list. <br>The main disadvantage of this, is that you can only traverse the list in one direction, from the first node(head) to the last node(tail)
