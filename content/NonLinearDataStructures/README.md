@@ -13,3 +13,6 @@ It is a data structure in which elements are not arranged in a sequential struct
 2. Graphs
 
 <a href="./Graphs/README.md">Look at content about graphs</a>
+
+3. HashMaps
+<a href="./Graphs/README.md">Look at content about graphs</a>
