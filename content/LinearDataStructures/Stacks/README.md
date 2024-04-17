@@ -2,7 +2,7 @@
 
 - A stack is a crucial linear data structure that follows the Last In First Out (LIFO) principle. This means that the last element added to the stack will be the first one to be removed.
 
-<img src="../../assets/Stacks.png"/>
+<img src="../../../assets/Stacks.png"/>
 
 > Stacks Key Points and Features:
 
@@ -40,6 +40,8 @@ Every close bracket has a corresponding open bracket of the same type.
 
 ```	
 
+
+
 > Solution using a stack:
 
 ```python
@@ -59,3 +61,4 @@ def isValid(s: str) -> bool:
     return not stack
 ```
 
+<img src="../../../assets/stacks/Screenshot from 2024-04-15 18-59-12.png"/>
