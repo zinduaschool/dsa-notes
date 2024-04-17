@@ -5,6 +5,11 @@ The word "Trie" is an excerpt from the word "retrieval". Trie is a sorted tree-b
 Trie is also known as the digital tree or prefix tree. The position of a node in the Trie determines the key with which that node is connected.
 Properties of the Trie for a set of the string:
 
+The diagram below depicts a trie representation for the bell, bear, bore, bat, ball, stop, stock, and stack.
+Trie Data Structure
+
+<img src="../../../../assets/Trees/trie-data-structure.png"/>
+
 <h1>Properties of Tries</h1>
 
 - The root node of the trie always represents the null node.
@@ -12,8 +17,6 @@ Properties of the Trie for a set of the string:
 - Each node can have a maximum of 26 children (A to Z).
 - Each node (except the root) can store one letter of the alphabet.
 
-The diagram below depicts a trie representation for the bell, bear, bore, bat, ball, stop, stock, and stack.
-Trie Data Structure
 
 <h2>Basic Operations of Tries</h2>
 
