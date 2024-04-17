@@ -88,7 +88,9 @@ tree.insert(7)
 tree.insert(1)
 tree.insert(4)
 
-print(tree.root) #prints the root of the tree
-tree.print_tree(tree.root)  #heirarchical representation of the tree
-print(tree.count_nodes()) #counts the number of nodes in the tree
+
+if __name__ == '__main__':
+    print(tree.root)
+    tree.print_tree(tree.root)
+    print(tree.count_nodes())
 
