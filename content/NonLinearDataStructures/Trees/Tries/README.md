@@ -27,3 +27,5 @@ Trie Data Structure
 3. Deletion of a node
 
 
+
+<a href="https://leetcode.com/problems/implement-trie-prefix-tree/">LeetCode Practice Question</a>
