@@ -28,19 +28,22 @@ class LinkedList:
 node1 = Node(10)
 node2 = Node(20)
 node3 = Node(30)
+node4 = Node(40)
 
 linked_list = LinkedList()
 linked_list.head = node1
 linked_list.head.next_node = node2
 linked_list.head.next_node.next_node = node3
+linked_list.head.next_node.next_node.next_node = node4
 
 
 # while linked_list.head:
 #     print(linked_list.head.data, end="\n")
 #     linked_list.head = linked_list.head.next_node
 
-reversed = LinkedList().reverse_linked_list(linked_list.head)
+reversed = linked_list.reverse_linked_list(linked_list.head)
 
-while reversed:
-    print(reversed, end="\n")
-    reversed.head = reversed.head.next_node
+current_node = reversed
+while current_node:
+    print(current_node.data, end="\n")
+    current_node = current_node.next_node
