@@ -17,8 +17,8 @@ class Node:
     '''
     def __init__(self, value): #constructor to instanciate node
         self.value = value #value/data
-        self.right_pointer = None #right pointer
-        self.left_pointer = None #left pointer
+        self.right = None #right pointer
+        self.left = None #left pointer
 
 
 
@@ -36,9 +36,9 @@ class BinaryTree:
         Insert function to insert new nodes inside the binaryTree created
         '''
         if not self.root:   #determines if the root node is empty
-            self.root = BinaryTree(value) #adds a new root node if empty
+            self.root = Node(value) #adds a new root node if empty
         else:
-            self.insert_recursively(self.root, value) #inserts new children using recursive helper function
+            self._insert_recursively(self.root, value) #inserts new children using recursive helper function
         
 
 
@@ -51,12 +51,44 @@ class BinaryTree:
             if node.left: #checks if the parent node is having a left child/pointer
                 self._insert_recursively(node.left, value) #recursively inserting the new nodes with the same logic on the left
             else: #if there's no left child/pointer
-                node.left = BinaryTree(value) #insert a new node on the left of the parent
+                node.left = Node(value) #insert a new node on the left of the parent
         elif value > node.value:
             #does the same recursive call on the right side
             if node.right:
                 self._insert_recursively(node.right, value)
             else:
-                node.right = BinaryTree(value)
+                node.right = Node(value)
 
+
+    def print_tree(self, node, level=0, prefix="Root: "):
+        """
+        Print the binary search tree structure recursively.
+        """
+        if node is not None:
+            print(" " * (level * 4) + prefix + str(node.value))
+            self.print_tree(node.left, level + 1, "L-- ")
+            self.print_tree(node.right, level + 1, "R-- ")
+
+
+    def count_nodes(self):
+        return self._count_nodes_recursively(self.root)
+
+    def _count_nodes_recursively(self, node):
+        if not node:
+            return 0
+        return 1 + self._count_nodes_recursively(node.left) + self._count_nodes_recursively(node.right)
+
+'''
+Creating the Tree instance
+'''
+tree = BinaryTree()
+tree.insert(5)
+tree.insert(3)
+tree.insert(7)
+tree.insert(1)
+tree.insert(4)
+
+print(tree.root) #prints the root of the tree
+tree.print_tree(tree.root)  #heirarchical representation of the tree
+print(tree.count_nodes()) #counts the number of nodes in the tree
 
