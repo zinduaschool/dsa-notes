@@ -15,4 +15,5 @@ It is a data structure in which elements are not arranged in a sequential struct
 <a href="./Graphs/README.md">Look at content about graphs</a>
 
 3. HashMaps
-<a href="./Graphs/README.md">Look at content about graphs</a>
+   
+<a href="./HashMaps/README.md">Look at content about hashmaps</a>
