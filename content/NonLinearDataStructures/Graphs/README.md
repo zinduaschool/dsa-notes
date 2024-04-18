@@ -81,10 +81,6 @@ An adjacency list is efficient in terms of storage because we only need to store
 
 6. **Acyclic Graphs**: A graph that has no cycles.
 
-7. **Connected Graphs**: A graph in which there is a path from every vertex to every other vertex.
-
-8. **Disconnected Graphs**: A graph in which there is some vertex or vertices that cannot be reached from other vertices.
-
 <h2>Applications of Graphs</h2>
 
 Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name and a pointer to the linked list of friends. 
