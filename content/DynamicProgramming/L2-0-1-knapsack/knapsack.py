@@ -17,7 +17,33 @@ def knapsack(maxW,w,p):
     return cache[(tuple(w),maxW)]
 
 
+def knapsack2(maxW,w,p):
+    if len(w) == 0:
+        return 0
+    if len(w) == 1:
+        if w[0] <= maxW:
+            return p[0]
+        return 0
+    
+    prev = [0] * (maxW+1)
+    curr = [0] * (maxW+1)
+
+    for i in range(len(w)):
+        curr[0] = 0
+        for j in range(1,maxW+1):
+            if w[i] > j:
+                curr[j] = prev[j]
+            else:
+                a = prev[j]
+                b = p[i] + prev[j-w[i]]
+                curr[j] = max(a,b)
+        prev = curr
+
+    return curr[-1]
+
+
+
 maxW = 8
-w = [3,5,7]
-p = [4,7,10]
-print(knapsack(maxW,w,p))
+w = [1,3,5,7]
+p = [2,4,7,10]
+print(knapsack2(maxW,w,p))
