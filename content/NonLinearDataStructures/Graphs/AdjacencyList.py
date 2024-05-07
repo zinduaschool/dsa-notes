@@ -1,3 +1,5 @@
+from collections import deque
+
 class Graph:
     def __init__(self):
         self.adjacency_list = {}
@@ -22,4 +24,8 @@ my_graph.add_vertex(4)
 my_graph.add_edge(1,3)
 my_graph.add_edge(2,4)
 my_graph.add_edge(1,2)
-my_graph.show_graph()
+
+
+
+if __name__ == '__main__':
+    my_graph.show_graph()
